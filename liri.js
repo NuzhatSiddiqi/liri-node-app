@@ -40,24 +40,28 @@ if (command === "concert-this") {
 }
 
 
-/*if (command === "spotify-this-song") {
+if (command === "movie-this") {
     const axios = require('axios');
+    var api = "9af60521";
 
-    var url = "https://www.npmjs.com/package/node-spotify-api";
+    var url = "http://www.omdbapi.com/?&t=" + artist + "&apikey=" + api;
     console.log(url);
     axios.get(url)
         .then(function (response) {
+            console.log(response.data);
 
-            var data = response.data;
+            /*var data = re.datasponse.data;
 
-            for (i = 0; i < data.length; i++) {
-                var object = data[i];
-                console.log("song:" + object.song.name);
-                console.log("Artist: " + object.artist.celine.dion);
-                console.log("Song: " + object.song.Because you loved me);
-                console.log("A preview link of the song: " + https://www.youtube.com/watch?v=JDcuRgk-JEI);
-                    console.log("Album:" + object.album.song);
-                console.log("-----------------------------------------------------------------------------------------------------");
-            }
+            /* for (i = 0; i < data.length; i++) {
+                 var object = data[i];
+                 console.log("song:" + object.song.name);
+                 console.log("Artist: " + object.artist.celine.dion);
+                 console.log("Song: " + object.song.Because you loved me);
+                 console.log("A preview link of the song: " + https://www.youtube.com/watch?v=JDcuRgk-JEI);
+                     console.log("Album:" + object.album.song);
+                 console.log("-----------------------------------------------------------------------------------------------------");
+             });*/
+        });
+}
 
-        }*/
+
